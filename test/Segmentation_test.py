@@ -1,13 +1,3 @@
-#-*- encoding:utf-8 -*-
-from __future__ import print_function
-
-import sys
-try:
-    reload(sys)
-    sys.setdefaultencoding('utf-8')
-except:
-    pass
-
 import codecs
 from textrank4zh import Segmentation
 
@@ -31,12 +21,12 @@ for s in result.sentences:
 
 print
 for ss in result.words_no_filter:
-    print( '  '.join(ss) )
+    print('  '.join(ss))
 
 print
 for ss in result.words_no_stop_words:
-    print( ' / '.join(ss) )
+    print(' / '.join(ss))
 
 print
 for ss in result.words_all_filters:
-    print (' | '.join(ss) )
+    print (' | '.join(ss))

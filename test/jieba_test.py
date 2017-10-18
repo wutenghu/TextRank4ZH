@@ -1,13 +1,3 @@
-#-*- encoding:utf-8 -*-
-from __future__ import print_function
-
-import sys
-try:
-    reload(sys)
-    sys.setdefaultencoding('utf-8')
-except:
-    pass
-
 import jieba.posseg as pseg
 words = pseg.cut("我爱北京天安门.。；‘你的#")
 for w in words:
